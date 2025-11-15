@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>About Us – Level</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'font-awesome-4.7.0/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/tooplate-style.css' %}">
+</head>
+
+<body>
+
+<div class="tm-main-content">
+
+    {% include 'navbar.html' %}
+
+    <section class="tm-section tm-section-pad">
+        <div class="container">
+            <h2 class="text-center mb-4">About Us</h2>
+
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <img src="{% static 'img/img-04.jpg' %}" class="img-fluid rounded shadow-sm">
+                </div>
+
+                <div class="col-md-6">
+                    <h3>Who We Are</h3>
+                    <p>
+                        We are a creative travel and design agency with a passion for building beautiful digital experiences.
+                        Our goal is to inspire people to explore the world through modern design, storytelling, and interactive media.
+                    </p>
+
+                    <h3 class="mt-4">Our Mission</h3>
+                    <p>
+                        To deliver high-quality, user-friendly digital products that help people discover new places and experiences.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+</html>
